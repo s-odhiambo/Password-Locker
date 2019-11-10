@@ -34,19 +34,6 @@ class User:
         '''
         User.users_list.remove(self)
     
-    # def save_user(self):
-    #     '''
-    #     Function to save a newly created user instance
-    #     '''
-    #     User.users_list.append(self)
-
-    # def delete_user(self):
-    #     '''
-    #     Function to delete user information
-    #     '''
-    #     User.users_list.remove(self)
-
-
 class Credential:
     '''
     class to create account credentials,generate passwords and save there information
