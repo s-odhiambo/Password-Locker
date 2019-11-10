@@ -79,6 +79,15 @@ class Credential:
         for credential in cls.credential_list:
             if credential.site_name == site_name:
                 return credential
+    
+    # @classmethod
+    # def find_by_site_name(cls, site_name):
+    #     '''
+    #     A method to search for credentials associated with a given account type.
+    #     '''
+    #     for credential in cls.credential_list:
+    #         if credential.site_name == site_name:
+    #             return credential
 
     @classmethod
     def copy_credentials(cls, site_name):
