@@ -21,7 +21,6 @@ class User:
         self.phone_number = phone_number
         self.password = password
 
-    
     def save_user(self):
         '''
         Function to save a newly created user instance
@@ -33,7 +32,8 @@ class User:
         Function to delete user information
         '''
         User.users_list.remove(self)
-    
+
+
 class Credential:
     '''
     class to create account credentials,generate passwords and save there information
@@ -79,15 +79,6 @@ class Credential:
         for credential in cls.credential_list:
             if credential.site_name == site_name:
                 return credential
-    
-    # @classmethod
-    # def find_by_site_name(cls, site_name):
-    #     '''
-    #     A method to search for credentials associated with a given account type.
-    #     '''
-    #     for credential in cls.credential_list:
-    #         if credential.site_name == site_name:
-    #             return credential
 
     @classmethod
     def copy_credentials(cls, site_name):
