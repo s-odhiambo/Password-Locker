@@ -12,6 +12,7 @@ def create_user(first_name, last_name, email, phone_number, password):
     new_user = User(first_name, last_name, email, phone_number, password)
     return new_user
 
+
 def create_credential(user_name, site_name, account_name, password):
     '''
     Function to create a new user account
@@ -25,7 +26,8 @@ def save_user(user):
     Function to save a new user account
     '''
     User.save_user(user)
-    
+
+
 def save_credentials(credential):
     '''
     Function to save a new user account
@@ -47,19 +49,13 @@ def generate_password(pass_len):
     '''
     return Credential.generate_password(pass_len)
 
+
 @classmethod
 def find_by_site_name(cls, site_name):
     '''
     A function to search for credentials when given an account site search as google, or twitter.
     '''
     return cls.find_by_site_
-
-# @classmethod
-# def find_by_site_name(cls, site_name):
-#     '''
-#     A function to search for credentials when given an account site search as google, or twitter.
-#     '''
-#     return cls.find_by_site_name(cls, site_name)
 
 
 @classmethod
