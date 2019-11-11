@@ -47,21 +47,19 @@ def generate_password(pass_len):
     '''
     return Credential.generate_password(pass_len)
 
-
-
-# def generate_password(pass_len):
-#     '''
-#     A funtion to generate password, combining random letters and digits
-#     '''
-#     return Credential.generate_password(pass_len)
-
-
 @classmethod
 def find_by_site_name(cls, site_name):
     '''
     A function to search for credentials when given an account site search as google, or twitter.
     '''
-    return cls.find_by_site_name(cls, site_name)
+    return cls.find_by_site_
+
+# @classmethod
+# def find_by_site_name(cls, site_name):
+#     '''
+#     A function to search for credentials when given an account site search as google, or twitter.
+#     '''
+#     return cls.find_by_site_name(cls, site_name)
 
 
 @classmethod
