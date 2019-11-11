@@ -41,19 +41,19 @@ def verify_user(first_name, password):
     return checking_user
 
 
-# def verify_user(first_name, password):
-#     '''
-#     Function that verifies the existance of the user before creating credentials
-#     '''
-#     checking_user = Credential.check_user(first_name, password)
-#     return checking_user
-
-
 def generate_password(pass_len):
     '''
     A funtion to generate password, combining random letters and digits
     '''
     return Credential.generate_password(pass_len)
+
+
+
+# def generate_password(pass_len):
+#     '''
+#     A funtion to generate password, combining random letters and digits
+#     '''
+#     return Credential.generate_password(pass_len)
 
 
 @classmethod
