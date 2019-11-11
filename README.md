@@ -1,4 +1,4 @@
-##### PASSWORD-LOCKER
+############## PASSWORD-LOCKER
 
 ### Author
  Samuel Odhiambo
