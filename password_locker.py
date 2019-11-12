@@ -1,6 +1,6 @@
 
 #!/usr/bin/env python3.6
-import pyperclip
+# import pyperclip
 from user import User
 from user import Credential
 
@@ -48,22 +48,6 @@ def generate_password(pass_len):
     A funtion to generate password, combining random letters and digits
     '''
     return Credential.generate_password(pass_len)
-
-
-@classmethod
-def find_by_site_name(cls, site_name):
-    '''
-    A function to search for credentials when given an account site search as google, or twitter.
-    '''
-    return cls.find_by_site_
-
-
-@classmethod
-def copy_credentials(cls, site_name):
-    '''
-    A class method to enable us to copy credentials of a given site name.
-    '''
-    return cls.copy_credentials(cls, site_name)
 
 
 def main():
